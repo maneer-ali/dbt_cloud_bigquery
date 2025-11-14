@@ -1,0 +1,32 @@
+CREATE TABLE `your_project.your_dataset.orders` (
+  order_id INT64,
+  customer_id INT64,
+  order_date DATE,
+  order_status STRING,
+  order_amount FLOAT64
+);
+
+
+INSERT INTO `your_project.your_dataset.orders`
+(order_id, customer_id, order_date, order_status, order_amount)
+VALUES
+(1, 101, DATE '2024-01-03', 'COMPLETED', 120.50),
+(2, 102, DATE '2024-01-05', 'PENDING', 89.99),
+(3, 103, DATE '2024-01-06', 'CANCELLED', 43.20),
+(4, 104, DATE '2024-01-08', 'COMPLETED', 199.00),
+(5, 105, DATE '2024-01-10', 'PROCESSING', 58.75),
+(6, 106, DATE '2024-01-11', 'COMPLETED', 230.40),
+(7, 107, DATE '2024-01-12', 'PENDING', 15.99),
+(8, 108, DATE '2024-01-13', 'COMPLETED', 340.00),
+(9, 109, DATE '2024-01-14', 'PROCESSING', 87.60),
+(10, 110, DATE '2024-01-15', 'COMPLETED', 49.90),
+(11, 111, DATE '2024-01-16', 'CANCELLED', 72.15),
+(12, 112, DATE '2024-01-17', 'PENDING', 128.99),
+(13, 113, DATE '2024-01-18', 'COMPLETED', 510.00),
+(14, 114, DATE '2024-01-19', 'PROCESSING', 66.49),
+(15, 115, DATE '2024-01-20', 'COMPLETED', 98.20),
+(16, 116, DATE '2024-01-21', 'COMPLETED', 149.99),
+(17, 117, DATE '2024-01-22', 'PENDING', 300.00),
+(18, 118, DATE '2024-01-23', 'PROCESSING', 215.10),
+(19, 119, DATE '2024-01-24', 'COMPLETED', 44.00),
+(20, 120, DATE '2024-01-25', 'COMPLETED', 399.99);
